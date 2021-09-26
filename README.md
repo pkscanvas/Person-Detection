@@ -21,4 +21,8 @@ To achieve further capabilities following would be my approach:
 1. Web scrape images having logos of required companies (be it over T-shirts, bags or vehicle)
 2. Annotate the images with bounding boxes
 3. Retrain the current object detector over collected examples
-4. Now we need to make sure that the logo is somewhere on the clothes or cap of the delivery person. So to achieve this we will levarage the predicted bounding boxes from the detector and will check "whether the detected logo lies within the person bbox".
+4. Now we need to make sure that the logo is somewhere on the clothes or cap of the delivery person. So to achieve this we will leverage the predicted bounding boxes from the detector and will check "whether the detected logo bbox lies within the person bbox".
+
+### Sources that helped in this creation:
+1. https://python.plainenglish.io/three-tips-to-improve-your-streamlit-app-a4c94b4d2b30 (For changing fonts)
+2. https://www.pluralsight.com/guides/deploying-image-classification-on-the-web-with-streamlit-and-heroku (This explains about CLI based deployment)
