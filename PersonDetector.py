@@ -10,9 +10,8 @@ import numpy as np
 from PIL import Image,ImageOps
 
 
-def person_detector(input_image, prob_threshold = 0.5):
+def person_detector(image, prob_threshold = 0.5):
     detector = hub.load("https://tfhub.dev/tensorflow/ssd_mobilenet_v2/2")
-    image = Image.open(input_image)
     im = ImageOps.fit(image, (224,224), Image.ANTIALIAS)
     image_array = np.asarray(im)
 #     image_resized = cv2.resize(image_array,(224,224))
