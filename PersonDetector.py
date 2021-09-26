@@ -5,7 +5,7 @@
 import tensorflow_hub as hub
 import cv2
 # import tensorflow as tf
-import matplotlib.pyplot as plt
+# import matplotlib.pyplot as plt
 import numpy as np
 
 
