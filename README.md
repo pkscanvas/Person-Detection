@@ -1,5 +1,5 @@
 # Person-Detection
-Deep learning based solution for detecting humans in a scene, leveraged further to detect delivery person of Indian food delivery apps.
+Deep learning based solution for detecting humans in a scene, will be leveraged further to detect delivery person of Indian food delivery apps.
 
 ## Demo
 Web app for the solution is created mainly using Streamlit which created frontend for the website and is deployed on Heroku which is a PAAS based
@@ -22,6 +22,8 @@ To achieve further capabilities following would be my approach:
 2. Annotate the images with bounding boxes
 3. Retrain the current object detector over collected examples
 4. Now we need to make sure that the logo is somewhere on the clothes or cap of the delivery person. So to achieve this we will leverage the predicted bounding boxes from the detector and will check "whether the detected logo bbox lies within the person bbox".
+
+### Due to time constraint I couldn't incorporate company detection in current approach but have started data collection (https://github.com/hardikvasa/google-images-download) so if this solution meets your expectations I can start with the labelling and training part depending upon bandwidth available.
 
 ### Sources that helped in this creation:
 1. https://python.plainenglish.io/three-tips-to-improve-your-streamlit-app-a4c94b4d2b30 (For changing fonts)
