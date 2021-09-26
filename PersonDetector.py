@@ -1,10 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
-
-
-import keras
+# import keras
 import tensorflow_hub as hub
 import cv2
 import tensorflow as tf
