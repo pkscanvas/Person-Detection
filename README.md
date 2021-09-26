@@ -1,10 +1,24 @@
 # Person-Detection
-## Problem Statement :
-Create a basic web application which will have option to upload
-photo manually or click photos from webcam after every 10 sec. The model should be capable of
-doing image recognition on the images being captured/uploaded and detect the folowing cases :
-1-) Whether there is a person in a image. If yes, show Human Detected on Web Page.
-2-) Whether there is a person in a image. If no , show No Human Detected on Web Page.
-3-)If a human is detected in the image then Check whether the person is a Zomato/Swiggy/Uber
-Eats/Dunzo(Choose any one) delivery boy and show the Company on the web page .
-4-)If a human is dected in the image, but is not delivery boy under these brands, Show Others.
+Deep learning based solution for detecting humans in a scene, leveraged further to detect delivery person of Indian food delivery apps.
+
+## Demo
+Web app for the solution is created mainly using Streamlit which created frontend for the website and is deployed on Heroku which is a PAAS based
+solution.
+The web app can be accessed via following link : https://delivery-detector.herokuapp.com/
+
+### Note:
+As Heroku provides 500 MB of space to host a solution which includes installing all dependencies which includes Tensorflow which itself is of around
+450 MB was preventing the solution to deployed online. To deal with this I've used cpu version of tensorflow which has made the inference slower
+(so please be patient after uploading an image!).
+
+### TO-DO:
+As of now tf-hub instance is being created at every call, need to isolate it and test for speed
+
+## Further Work:
+As of now the solution detects the presence of human in a scene be it a delivery boy or not.
+To achieve further capabilities following would be my approach:
+
+1. Web scrape images having logos of required companies (be it over T-shirts, bags or vehicle)
+2. Annotate the images with bounding boxes
+3. Retrain the current object detector over collected examples
+4. Now we need to make sure that the logo is somewhere on the clothes or cap of the delivery person. So to achieve this we will levarage the predicted bounding boxes from the detector and will check "whether the detected logo lies within the person bbox".
