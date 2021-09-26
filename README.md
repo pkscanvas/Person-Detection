@@ -25,4 +25,5 @@ To achieve further capabilities following would be my approach:
 
 ### Sources that helped in this creation:
 1. https://python.plainenglish.io/three-tips-to-improve-your-streamlit-app-a4c94b4d2b30 (For changing fonts)
-2. https://www.pluralsight.com/guides/deploying-image-classification-on-the-web-with-streamlit-and-heroku (This explains about CLI based deployment)
+2. https://docs.streamlit.io/en/stable/getting_started.html (This explains about basic Streamlit components)
+3. https://youtu.be/zK4Ch6e1zq8 (For setup.sh and procfile)
