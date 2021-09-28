@@ -21,7 +21,7 @@ if uploaded_file is not None:
         st.markdown(""" <style> .font {
         font-size:50px ; font-family: 'Cooper Black'; color: #FF9633;} 
         </style> """, unsafe_allow_html=True)
-        st.markdown('<p class="font">No Person Detected</p>', unsafe_allow_html=True)
+        st.markdown('<p class="font">No Person Detected!</p>', unsafe_allow_html=True)
     else:
         # st.write("Person Detected")
         st.markdown(""" <style> .font {
